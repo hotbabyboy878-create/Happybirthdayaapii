@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Aapi</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  body {
+    margin:0; padding:0; 
+    display:flex; justify-content:center; align-items:center; 
+    flex-direction:column; height:100vh; 
+    background: #EEF5F0; 
+    font-family: 'Montserrat', sans-serif;
+    color:#2E4A3B;
+    text-align:center;
+  }
+
+  h1 {
+    font-family:'Playfair Display', serif;
+    font-size:3rem;
+    color:#9CAF88;
+    margin-bottom:20px;
+  }
+
+  #start-btn {
+    padding:15px 35px;
+    font-size:1.3rem;
+    font-weight:600;
+    border:none;
+    border-radius:50px;
+    background:#7FA58C;
+    color:white;
+    cursor:pointer;
+    margin-bottom:20px;
+  }
+
+  video {
+    display:none;
+    width:80%;
+    max-width:600px;
+    border-radius:16px;
+  }
+</style>
+</head>
+<body>
+
+<h1>Happy Birthday Aapi 🎉💖</h1>
+<button id="start-btn">Open Your Surprise</button>
+
+<video id="birthday-video" controls>
+  <source src="YOUR_VIDEO_URL_HERE.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<script>
+const btn = document.getElementById('start-btn');
+const video = document.getElementById('birthday-video');
+
+btn.onclick = () => {
+  btn.style.display = 'none';
+  video.style.display = 'block';
+  video.play();
+};
+</script>
+
+</body>
+</html>
